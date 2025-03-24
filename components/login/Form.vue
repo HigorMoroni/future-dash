@@ -1,3 +1,9 @@
+<script setup>
+const { openInPopup, loggedIn } = useUserSession();
+
+watch(loggedIn, (newLoggedIn) => newLoggedIn && navigateTo('/'), { immediate: true });
+</script>
+
 <template>
   <section class="flex flex-col w-10/12 max-w-md m-auto text-sm">
     <h1 class="font-bold text-4xl text-title">Entrar</h1>
