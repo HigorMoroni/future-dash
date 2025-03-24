@@ -2,7 +2,10 @@
   <section class="flex flex-col w-10/12 max-w-md m-auto text-sm">
     <h1 class="font-bold text-4xl text-title">Entrar</h1>
     <p class="text-secondary-gray-600 font-light mt-2 text-base">Use seu email e senha para entrar</p>
-    <button class="mt-6">Entrar com o Google</button>
+    <button class="flex justify-center gap-2 mt-6 py-4 text-title bg-google-button-background rounded-2xl cursor-pointer" @click="openInPopup('/auth/google')">
+      <Icon name="devicon:google" size="1.5rem" />
+      Entrar com o Google
+    </button>
     <div class="flex items-center justify-center mt-6">
       <hr class="border-t border-secondary-gray-500 w-full">
       <span class="px-4 text-secondary-gray-600">ou</span>
@@ -38,7 +41,8 @@
       </div>
       <a href="" class="text-primary-purple-blue-500">Esqueceu sua senha?</a>
     </div>
-    <button class="mt-6 py-5 text-white font-bold bg-primary-purple-blue-500 rounded-2xl cursor-pointer">Entrar</button>
+    <button class="mt-6 py-4 text-white font-bold bg-primary-purple-blue-500 rounded-2xl cursor-pointer">Entrar</button>
     <span class="mt-6 text-title">Não tem cadastro? <a href="" class="text-primary-purple-blue-500 font-bold">Criar uma conta</a></span>
   </section>
 </template>
+
